@@ -59,22 +59,20 @@ class Recorder():
 
 
     def record(self):
-        print('请按下回车键开始录音：')
-        
-        print("Enter start:")
+        print("Enter start to start up recording:")
         x = input()
         if x == 'start':        
             begin = time.time()
             print("Start recording")
             self.start()
-            print('请按下回车键结束录音：')
+            print("Enter end to end up recording:")
             x = input()
             if x == 'end':
                 print("Stop recording")
                 self.stop()
                 fina = time.time()
                 t = fina - begin
-                print('录音时间为%ds'%t)
+                print('recording time is %ds'%t)
 
 
 if __name__ == "__main__":
